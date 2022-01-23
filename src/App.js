@@ -1,12 +1,12 @@
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter,BrowserRouter, Route, Routes } from "react-router-dom";
 import SearchPage from "./Components/SearchPage/SearchPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Header />
         <Routes>
@@ -15,7 +15,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
