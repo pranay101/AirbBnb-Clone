@@ -3,6 +3,7 @@ import Banner from "./Banner/Banner";
 import classes from "./Home.module.css";
 import Card from "./Card/Card";
 
+
 function Home() {
   return (
     <div>
