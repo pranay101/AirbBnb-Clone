@@ -6,17 +6,16 @@ import SearchPage from "./Components/SearchPage/SearchPage";
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="App">
         <Header />
         <Routes>
-          <Route path={"/search"} element={<SearchPage />} />
-          <Route path={"/"} element={<Home />} />
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="/" element={<Home />} />
         </Routes>
-
         <Footer />
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
